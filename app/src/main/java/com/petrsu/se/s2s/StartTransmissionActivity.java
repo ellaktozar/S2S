@@ -13,8 +13,8 @@ public class StartTransmissionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_start_transmission);
     }
 
-    public void goBack(View view) {
-        Intent intent = new Intent(StartTransmissionActivity.this, ConnectModeActivity.class);
+    public void goBack(View view) { // TODO: check the mode and load the proper screen
+        Intent intent = new Intent(StartTransmissionActivity.this, EnterIP_Activity.class);
         startActivity(intent);
     }
 

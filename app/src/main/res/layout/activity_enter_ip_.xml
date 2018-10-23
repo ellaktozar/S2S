@@ -26,9 +26,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="3dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="5dp"
         android:layout_marginBottom="8dp"
-        android:onClick="goToStartT"
+        android:onClick="startT"
         android:text="Подтвердить"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,7 +78,9 @@
         android:layout_marginStart="65dp"
         android:layout_marginTop="120dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:inputType="numberPassword"
+        android:maxLength="3" />
 
     <EditText
         android:id="@+id/EditIP2"
@@ -87,7 +89,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="120dp"
         app:layout_constraintStart_toEndOf="@+id/EditIP1"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:inputType="numberPassword"
+        android:maxLength="3"/>
 
     <EditText
         android:id="@+id/EditIP3"
@@ -96,7 +100,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="120dp"
         app:layout_constraintStart_toEndOf="@+id/EditIP2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:inputType="numberPassword"
+        android:maxLength="3"/>
 
     <EditText
         android:id="@+id/EditIP4"
@@ -108,6 +114,33 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/EditIP3"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:inputType="numberPassword"
+        android:maxLength="3"/>
+
+    <EditText
+        android:id="@+id/textWarning"
+        android:layout_width="222dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:cursorVisible="false"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:focusableInTouchMode="false"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGoBackIP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonConfirmIP" />
 
 </android.support.constraint.ConstraintLayout>
