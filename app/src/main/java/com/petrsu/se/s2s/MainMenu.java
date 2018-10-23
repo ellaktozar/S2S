@@ -17,4 +17,14 @@ public class MainMenu extends AppCompatActivity {
         Intent intent = new Intent(MainMenu.this, ConnectModeActivity.class);
         startActivity(intent);
     }
+
+    public void goToAuthors(View view) {
+        Intent intent = new Intent(MainMenu.this, AuthorsActivity.class);
+        startActivity(intent);
+    }
+
+    public void goToManual(View view) {
+        Intent intent = new Intent(MainMenu.this, ManualActivity.class);
+        startActivity(intent);
+    }
 }

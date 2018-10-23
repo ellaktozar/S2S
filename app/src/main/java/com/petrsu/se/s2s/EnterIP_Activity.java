@@ -13,6 +13,10 @@ public class EnterIP_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_enter_ip_);
     }
 
+    public void goToStartT(View view) {
+        Intent intent = new Intent(EnterIP_Activity.this, StartTransmissionActivity.class);
+        startActivity(intent);
+    }
     public void goBack(View view) {
         Intent intent = new Intent(EnterIP_Activity.this, ConnectModeActivity.class);
         startActivity(intent);
