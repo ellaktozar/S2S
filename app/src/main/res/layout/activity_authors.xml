@@ -41,7 +41,7 @@
         android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="3dp"
-        android:onClick="goToMainMenu"
+        android:onClick="goToMain"
         android:text="Вернуться в главное меню"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
